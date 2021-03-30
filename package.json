@@ -1,7 +1,7 @@
 {
-    "name": "com.llockham.dynamicdecals",
-    "description": "This solution was developed by Llockham-Industries and originally sold in the Unity Asset Store. Dynamic Decals was deprecated when the new Unity render pipeline was launched, but the original author gave their permission to open source the project as it still works for Unity's Built-in Render Pipeline.",
-    "version": "2.0.0",
-    "unity": "2020.1",
-    "displayName": "Dynamic Decals"
-  }
+  "name": "com.dynamicdecals",
+  "description": "This solution was developed by Llockham-Industries and originally sold in the Unity Asset Store. Dynamic Decals was deprecated when the new Unity render pipeline was launched, but the original author gave their permission to open source the project as it still works for Unity's Built-in Render Pipeline.",
+  "version": "2.0.0",
+  "unity": "2020.1",
+  "displayName": "Dynamic Decals"
+}

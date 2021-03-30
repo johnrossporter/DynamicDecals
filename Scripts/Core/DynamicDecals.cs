@@ -613,7 +613,7 @@ namespace LlockhamIndustries.Decals
             #if UNITY_EDITOR
             Settings.CalculateVR();
 
-            SceneView.onSceneGUIDelegate += OnSceneGUI;
+            SceneView.duringSceneGui += OnSceneGUI;
             Undo.undoRedoPerformed += UndoRedo;
             #endif
 
@@ -642,7 +642,7 @@ namespace LlockhamIndustries.Decals
         private void Terminate()
         {
             #if UNITY_EDITOR
-            SceneView.onSceneGUIDelegate -= OnSceneGUI;
+            SceneView.duringSceneGui -= OnSceneGUI;
             Undo.undoRedoPerformed -= UndoRedo;
             #endif
 
@@ -1149,11 +1149,11 @@ namespace LlockhamIndustries.Decals
                     break;
             }
 
-            if (depthBuffer != null) Misc.DebugManager.Log("Depth Format", depthBuffer.format.ToString());
-            if (normalBuffer != null) Misc.DebugManager.Log("Normal Format", normalBuffer.format.ToString());
-            if (maskBuffer != null) Misc.DebugManager.Log("Mask Format", maskBuffer.format.ToString());
-            Misc.DebugManager.Log("Shader Replacement", shaderReplacement.ToString());
-            Misc.DebugManager.Log("API", SystemInfo.graphicsDeviceType.ToString());
+            //if (depthBuffer != null) Misc.DebugManager.Log("Depth Format", depthBuffer.format.ToString());
+            //if (normalBuffer != null) Misc.DebugManager.Log("Normal Format", normalBuffer.format.ToString());
+            //if (maskBuffer != null) Misc.DebugManager.Log("Mask Format", maskBuffer.format.ToString());
+            //Misc.DebugManager.Log("Shader Replacement", shaderReplacement.ToString());
+            //Misc.DebugManager.Log("API", SystemInfo.graphicsDeviceType.ToString());
 
             //Update our rendering method
             if (replacement != shaderReplacement)

@@ -335,9 +335,9 @@ namespace LlockhamIndustries.Decals
         {
             if (this != null)
             {
-                #if UNITY_EDITOR
-                PrefabType prefabType = PrefabUtility.GetPrefabType(gameObject);
-                if (prefabType == PrefabType.ModelPrefab || prefabType == PrefabType.Prefab) return false;
+#if UNITY_EDITOR
+                PrefabAssetType prefabType = PrefabUtility.GetPrefabAssetType(gameObject);// PrefabUtility.GetPrefabType(gameObject);
+                if (prefabType == PrefabAssetType.Model || prefabType == PrefabAssetType.Regular) return false;
                 #endif
 
                 return DynamicDecals.System.Register(this);
@@ -349,8 +349,8 @@ namespace LlockhamIndustries.Decals
             if (this != null)
             {
                 #if UNITY_EDITOR
-                PrefabType prefabType = PrefabUtility.GetPrefabType(gameObject);
-                if (prefabType == PrefabType.ModelPrefab || prefabType == PrefabType.Prefab) return;
+                PrefabAssetType prefabType = PrefabUtility.GetPrefabAssetType(gameObject);
+                if (prefabType == PrefabAssetType.Model || prefabType == PrefabAssetType.Regular) return;
                 #endif
 
                 DynamicDecals.System.Deregister(this);
