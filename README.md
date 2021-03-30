@@ -4,8 +4,6 @@
 
 This solution was developed by Llockham-Industries and originally sold in the Unity Asset Store. Dynamic Decals was deprecated when the new Unity render pipeline was launched, but the original author [gave their permission](https://forum.unity.com/threads/released-dynamic-decals.450820/page-17#post-6814172) to open source the project as it still works for Unity's Built-in Render Pipeline.
 
-![Dynamic Decals](dynamic-decals.jpg)
-
 ## Description
 
 Dynamic Decals is the decal solution built from the ground up to be fast, easy to use and flexible. Perfect for bullet holes, blood effects, projected UI elements and just about anything else you can think of!
