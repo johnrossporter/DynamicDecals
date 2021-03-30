@@ -327,7 +327,7 @@ namespace LlockhamIndustries.Decals
         }
         private static Projection CreateProjection(string Name, Type Type)
         {
-            Projection projection = (Projection)ScriptableObject.CreateInstance(Type.Name);
+            Projection projection = (Projection)ScriptableObject.CreateInstance(Type);
 
             //Grab the path to our settings file
             string path = AssetDatabase.GetAssetPath(DynamicDecals.System.Settings);
